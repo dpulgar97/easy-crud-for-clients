@@ -4,25 +4,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Tu paleta personalizada (escala de azules)
-        primary: {
-          50: "#edf2fb", // El más claro (fondos)
-          100: "#e2eafc",
-          200: "#d7e3fc",
-          300: "#ccdbfd",
-          400: "#c1d3fe",
-          500: "#b6ccfe",
-          600: "#abc4ff", // El más intenso de tu lista
+        // Color de acento principal (inspirado en la referencia)
+        accent: {
+          DEFAULT: "#0077b6", // Tu azul principal
+          hover: "#023e8a",
+          light: "#e0f2fe", // Fondo muy suave para estados activos
         },
-        // Colores para acciones (suaves)
-        success: {
-          soft: "#86efac", // Verde suave para guardar/crear
-          hover: "#4ade80", // Un poco más oscuro para hover
+        // Fondos neutros
+        background: {
+          main: "#f8f9fa", // Gris muy claro para el fondo general
+          card: "#ffffff", // Blanco puro para tarjetas y sidebar
         },
-        danger: {
-          soft: "#fca5a5", // Rojo suave para eliminar
-          hover: "#f87171", // Un poco más oscuro para hover
+        // Texto
+        text: {
+          primary: "#1e293b", // Gris oscuro para títulos
+          secondary: "#64748b", // Gris medio para descripciones
+          muted: "#94a3b8", // Gris claro para placeholders
         },
+        // Acciones (solo los necesarios)
+        success: "#22c55e",
+        danger: "#ef4444",
+      },
+      boxShadow: {
+        soft: "0 1px 3px rgba(0,0,0,0.05)",
+        card: "0 1px 3px rgba(0,0,0,0.08)",
       },
     },
   },
